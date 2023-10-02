@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tray.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dmw-Yh-LeT">
+                                <rect key="frame" x="143" y="144.5" width="128" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="H9i-Re-rC7"/>
+                                    <constraint firstAttribute="width" constant="128" id="ab0-yj-WkZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="64"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simon Ng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epi-6S-9iR">
+                                <rect key="frame" x="170" y="287" width="74.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Founder of AppCoda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIs-Al-214">
+                                <rect key="frame" x="133" y="315" width="148" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuQ-D8-eqU">
+                                <rect key="frame" x="36.5" y="353" width="341" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="341" id="uTv-lh-Z3s"/>
+                                </constraints>
+                                <string key="text">Author of multiplr iOS programming books including  Beginning iOS 12 Pgrogramming with Swift and Intermediate iOS 12 Programming with Swift. iOS developer and Blogger.</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BIs-Al-214" firstAttribute="top" secondItem="epi-6S-9iR" secondAttribute="bottom" constant="7.5" id="2in-tv-4am"/>
+                            <constraint firstItem="tuQ-D8-eqU" firstAttribute="top" secondItem="BIs-Al-214" secondAttribute="bottom" constant="20" id="8yW-f2-LJY"/>
+                            <constraint firstItem="BIs-Al-214" firstAttribute="centerX" secondItem="epi-6S-9iR" secondAttribute="centerX" id="Aff-f1-7Xi"/>
+                            <constraint firstItem="epi-6S-9iR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="L1T-V1-sNw"/>
+                            <constraint firstItem="epi-6S-9iR" firstAttribute="top" secondItem="dmw-Yh-LeT" secondAttribute="bottom" constant="15" id="YsC-B6-w6T"/>
+                            <constraint firstItem="dmw-Yh-LeT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hld-pN-SaC"/>
+                            <constraint firstItem="tuQ-D8-eqU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nQL-sa-QXq"/>
+                            <constraint firstItem="BIs-Al-214" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vb5-hc-Hrl"/>
+                            <constraint firstItem="dmw-Yh-LeT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="wNG-DC-tcs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Company" destination="BIs-Al-214" id="moq-8S-g2G"/>
+                        <outlet property="Username" destination="epi-6S-9iR" id="eKG-oB-7di"/>
+                        <outlet property="about" destination="tuQ-D8-eqU" id="Yka-iZ-Fux"/>
+                        <outlet property="imageView" destination="dmw-Yh-LeT" id="Wfl-qj-00v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tray.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
